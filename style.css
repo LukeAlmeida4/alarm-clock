@@ -1,0 +1,351 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    height: 100vh;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,207cca+27,7db9e8+100 */
+    background: #1e5799;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #1e5799 0%, #207cca 27%, #7db9e8 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #1e5799 0%, #207cca 27%, #7db9e8 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #1e5799 0%, #207cca 27%, #7db9e8 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8', GradientType=0);
+    /* IE6-9 */
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.sun {
+    transition-timing-function: ease-in;
+    transition: 2s;
+    display: block;
+    width: 350px;
+    height: 350px;
+    background: #ff0;
+    border-radius: 100%;
+    left: 50%;
+    top: -150px;
+    z-index: 1;
+    position: relative;
+    box-shadow: 0 0 150px #ff0, 0 0 100px #ff0;
+
+}
+
+.box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -120px;
+    margin-left: -200px;
+    background-color: #67809F;
+    max-height: 380px;
+    max-width: 420px;
+    border: 0;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2), 0 15px 30px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wrapper {
+    margin: 20px;
+    text-align: center;
+    color: white;
+
+}
+
+#message {
+    margin: 15px;
+    display: none;
+}
+
+.leftcolumn {
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+#jsalarm_ct,
+#date {
+    color: black;
+    font-weight: 800;
+    font-size: 1.2em;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.night {
+    background: linear-gradient(182deg, #000000, #a7a7a7);
+    height: 100vh;
+}
+
+.moon {
+    transition-timing-function: ease-in;
+    transition: 2s;
+    background-color: white;
+    box-shadow: 0 0 80px white;
+    display: block;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    left: 50%;
+    top: -150px;
+    z-index: 1;
+    position: relative;
+
+}
+
+select {
+    width: 45px;
+    height: 25px;
+    background: #1e5799;
+    color: white;
+    border: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+select:hover {
+    transition: all .4s ease;
+    opacity: 0.8;
+}
+
+#musicloc {
+    color: white;
+    background-color: #1e5799;
+    border-radius: 20px;
+    width: 300px;
+    height: 25px;
+    font-weight: 700;
+    padding: 5px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    border: 0;
+    box-shadow: inset 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#musicloc:hover {
+    transition: all .4s ease;
+    opacity: 0.8;
+}
+
+input[type=submit],
+input[type=reset] {
+    width: 75px;
+    height: 40px;
+    color: #fff;
+    font-weight: 700px;
+    border: 0;
+    border-radius: 50px;
+    background: #1e5799;
+    cursor: pointer;
+    transition: all .3s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 15px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    opacity: 0.8;
+}
+
+.cloud {
+  position: relative;
+  top: 20%;
+  left: 10%;
+  width: 200px;
+  height: 100px;
+
+}
+
+.cloud > span{
+  position: absolute;
+  background-color: white;
+}
+
+.cloud-small {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50px;
+  top: 25px; 
+  left: 30px; 
+}
+
+.cloud-medium {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50px;
+  right: 30px; 
+}
+
+.cloud-large{
+  position: absolute;
+  bottom: 0;
+  width: 100%; 
+  height: 50%; 
+  border-radius: 250px;
+}
+
+.cloud-two{
+  position: absolute;
+  top: 30%;
+  left: 63%;
+  width: 200px;
+  height: 100px;
+    
+}
+
+.cloud-two > span{
+  position: absolute;
+  background-color: white;
+}
+
+
+.cloud-small--two {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50px;
+  top: 18px; 
+  left: 115px; 
+}
+
+.cloud-medium--two {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50px;
+  right: 70px; 
+}
+
+.cloud-large--two{
+  position: absolute;
+  bottom: 0;
+  width: 100%; 
+  height: 70%; 
+  border-radius: 200px;
+}

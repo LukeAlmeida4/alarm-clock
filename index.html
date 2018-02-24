@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Online Alarm Clock - Wake up when you need to!">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="responsive.css" />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Orbitron" rel="stylesheet">
+    <title>Online Youtube Alarm Clock</title>
+
+</head>
+
+<body id="background">
+
+    <div class="sun" id="sun"></div>
+    <div id="cloud" class="cloud">
+        <span class="cloud-small"></span>
+        <span class="cloud-medium"></span>
+        <span class="cloud-large"></span>
+    </div>
+    <div id="cloud-two" class="cloud-two">
+        <span class="cloud-small--two"></span>
+        <span class="cloud-medium--two"></span>
+        <span class="cloud-large--two"></span>
+    </div>
+    <div class="box">
+        <div class="wrapper">
+            <div class="leftcolumn">Current Date:</div>
+            <span id="date"></span>
+            <form action="" method="">
+                <div id="jsalarmclock">
+                    <div>
+                        <div class="leftcolumn">
+                            Current Time:
+                        </div>
+                        <span id="jsalarm_ct"></span>
+                    </div>
+                    <div>
+                        <div class="leftcolumn">
+                            Set Alarm:
+                        </div>
+                        <span>
+                        <select></select> Hour
+                    </span>
+                        <span><select></select> Minutes
+                    </span>
+                        <span><select></select> Seconds
+                    </span>
+                    </div>
+
+                    <div>
+                        <div class="leftcolumn">Set Alarm Song:</div>
+                        <input type="text" id="musicloc" size="45" value="https://www.youtube.com/watch?v=IcrbM1l_BoI" />
+                    </div>
+                    <input type="submit" value="Set" id="submitbutton" /> <input type="reset" value="Reset" id="resetbutton" />
+                </div>
+            </form>
+
+            <div id="message"></div>
+        </div>
+
+
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+    <script type="text/javascript">
+        jsalarm.init()
+    </script>
+
+</body>
+</html>
